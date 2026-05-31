@@ -1,0 +1,23 @@
+.formulario-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-container h1 {
+  font-size: 24px;
+  color: #003DA5;
+  margin-bottom: 24px;
+}
+
+.formulario {
+  background: #fff;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    padding: 20px;
+  }
+}

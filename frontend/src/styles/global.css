@@ -1,0 +1,150 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+/* Botões */
+.btn-primario {
+  background: #003DA5;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-primario:hover:not(:disabled) {
+  background: #002d7a;
+}
+
+.btn-primario:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secundario {
+  background: #fff;
+  color: #003DA5;
+  border: 2px solid #003DA5;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-secundario:hover {
+  background: #eef2fc;
+}
+
+.btn-cancelar {
+  background: #C8102E;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-cancelar:hover {
+  background: #a00d25;
+}
+
+/* Campos de formulário */
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.campo label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.campo input,
+.campo textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  background: #fff;
+  font-family: inherit;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #003DA5;
+  box-shadow: 0 0 0 2px rgba(0, 61, 165, 0.15);
+}
+
+.erro-campo {
+  color: #C8102E;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.erro-api {
+  background: #fff0f2;
+  border: 1px solid #C8102E;
+  color: #C8102E;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Badges de status */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge-confirmada {
+  background: #e6f4ea;
+  color: #1a7c35;
+}
+
+.badge-cancelada {
+  background: #fdecea;
+  color: #C8102E;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin: 16px auto;
+  }
+}

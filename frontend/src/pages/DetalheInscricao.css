@@ -1,0 +1,91 @@
+.detalhe-container h1 {
+  font-size: 24px;
+  color: #003DA5;
+}
+
+.detalhe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.btn-voltar {
+  background: none;
+  border: none;
+  color: #003DA5;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.btn-voltar:hover {
+  text-decoration: underline;
+}
+
+.detalhe-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 32px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.detalhe-status {
+  margin-bottom: 16px;
+}
+
+.detalhe-protocolo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.detalhe-protocolo strong {
+  color: #003DA5;
+  font-size: 18px;
+}
+
+.detalhe-ficha .ficha-linha {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+
+.ficha-linha span:first-child {
+  font-weight: 600;
+  min-width: 130px;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.detalhe-acoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.detalhe-form {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .detalhe-card {
+    padding: 20px;
+  }
+
+  .detalhe-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .ficha-linha span:first-child {
+    min-width: 100px;
+  }
+}
