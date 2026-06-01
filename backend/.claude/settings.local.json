@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java -version)",
+      "Bash(mvn -version)",
+      "PowerShell(java *)",
+      "PowerShell(mvn *)",
+      "Bash(npm install *)",
+      "PowerShell(Get-Command *)",
+      "Bash(Get-ChildItem *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/api/inscricoes)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(curl *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Paulo\\\\OneDrive\\\\Documents\\\\Script\\\\inscricoes-segup-frontend\\\\src\" -Recurse | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\Paulo\\\\OneDrive\\\\Documents\\\\Script\\\\inscricoes-segup-frontend\\\\\", \"\"\\) })"
+    ]
+  }
+}
