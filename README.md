@@ -46,7 +46,7 @@ O Docker Compose sobe os três serviços necessários: banco de dados, backend e
 
 ```bash
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone <https://github.com/josespinelli/sistemas-de-inscricoes-segup-pa.git>
 
 # 2. Entre na pasta do backend
 cd incricoes-segup
