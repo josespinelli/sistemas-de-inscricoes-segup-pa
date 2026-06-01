@@ -46,10 +46,10 @@ O Docker Compose sobe os três serviços necessários: banco de dados, backend e
 
 ```bash
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/josespinelli/sistemas-de-inscricoes-segup-pa.git
 
 # 2. Entre na pasta do backend
-cd incricoes-segup
+cd sistemas-de-inscricoes-segup-pa/backend
 
 # 3. Copie o arquivo de variáveis de ambiente
 cp .env.example .env
@@ -89,7 +89,7 @@ Pré-requisitos: Java 17, Maven, MySQL rodando localmente.
 
 ```bash
 # 1. Entre na pasta do backend
-cd incricoes-segup
+cd sistemas-de-inscricoes-segup-pa/backend
 
 # 2. Copie e ajuste as variáveis de ambiente
 cp .env.example .env
@@ -110,7 +110,7 @@ Pré-requisitos: Node 18+.
 
 ```bash
 # 1. Entre na pasta do frontend (diretório irmão do backend)
-cd incricoes-segup-frontend
+cd ../frontend
 
 # 2. Copie e ajuste as variáveis de ambiente
 cp .env.example .env
@@ -129,7 +129,7 @@ Frontend disponível em `http://localhost:5173`.
 
 ## Variáveis de ambiente
 
-### Backend — `incricoes-segup/.env`
+### Backend — `backend/.env`
 
 | Variável | Padrão (Docker) | Padrão (local) | Descrição |
 |---|---|---|---|
@@ -140,7 +140,7 @@ Frontend disponível em `http://localhost:5173`.
 | `DB_PASS` | `root` | `root` | Senha do banco |
 | `SERVER_PORT` | `8080` | `8080` | Porta da API |
 
-### Frontend — `incricoes-segup-frontend/.env`
+### Frontend — `frontend/.env`
 
 | Variável | Valor (local) | Valor (Docker) | Descrição |
 |---|---|---|---|
@@ -219,7 +219,7 @@ Documentação interativa completa (Swagger UI): `http://localhost:8080/swagger-
 ## Estrutura do projeto
 
 ```
-incricoes-segup/                          ← backend
+backend/                                  ← backend
 ├── src/main/java/com/segup/inscricoes/
 │   ├── controller/                       ← endpoints REST
 │   ├── service/                          ← regras de negócio
@@ -238,7 +238,7 @@ incricoes-segup/                          ← backend
 ├── .env.example
 └── pom.xml
 
-incricoes-segup-frontend/                 ← frontend (diretório irmão)
+frontend/                                 ← frontend (diretório irmão)
 └── src/
     ├── pages/                            ← telas da aplicação
     ├── components/                       ← componentes reutilizáveis
